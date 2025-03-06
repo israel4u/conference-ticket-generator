@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Conference ticket generator</title>
+    <!--- Google font --->
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Custom styles --->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    
+    <div class="wrapper">
+      <header class="header">
+        <img
+        class="header__logo"
+        src="./assets/images/logo-full.svg"
+        alt="Coding conference logo"
+        />  
+      </header>
+      <img class="top-pattern" src="./assets/images/pattern-squiggly-line-top.svg" alt="Pattern squiggly top line">
+      <img class="bottom-pattern" src="./assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg" alt="Pattern squiggly bottom line">
+      <main class="main container">
+        <div class="hero">
+          <h1 class="hero__title">Your Journey to Coding <br>Conf 2025 Starts Here!</h1>
+          <p class="hero__description">Secure your spot at next year's biggest coding conference.</p>
+        </div>
+          
+          <div class="avatar_form">
+            <div class="avatar">
+              <h2 class="avatar__title">Upload Avatar</h2>  
+              <div class="avatar__content">
+                <img class="avatar__upload" src="./assets/images/icon-upload.svg" alt="Avatar image">
+                <p class="avatar__upload-text">Drag and drop or click to upload</p>
+                <!--<div class="avatar__buttons">
+                  <a class="avatar_button avatar_button__remove">Remove image</a>
+                  <a class="avatar_button avatar_button__change">Change image</a>
+                </div>--> 
+              </div>
+              <a class="avatar__info">
+                <img src="./assets/images/icon-info.svg" alt="Avatar info">
+                <p>upload Upload your photo (JPG or PNG, max size: 500KB).</p>
+              </a> 
+            </div>
+
+            <!-- Form starts -->
+            <form class="form" action="">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input class="input" type="text" name="full_name" id="full_name" placeholder="Enter full name">
+              </div>
+              <div class="form-group">
+                <label for="name">Email Address</label>
+                <input class="input" type="email" name="email" id="email" placeholder="example@email.com">
+              </div>
+              <div class="form-group">
+                <label for="name">GitHub Username</label>
+                <input class="input" type="text" name="full_name" id="full_name" placeholder="@yourusername">
+              </div>
+              <input class="submit" type="submit" value="Generate My Ticket">
+            </form>
+          </div>
+      </main>
+      <footer></footer>
+    </div>
+
+    
+
+    <!-- Form ends -->
+
+    <!-- Generated tickets starts -->
+<!--
+    Congrats, 
+    {#  Full Name #}! Your ticket is ready. We've emailed your ticket to #}
+    Email Address 
+    and will send updates in the run up to the event. Coding Conf Jan 31, 2025 /
+    Austin, TX
+
+     Generated tickets ends -->
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Oluokun Oluwashola Israel</a>.
+    </div>
+  </body>
+</html>
