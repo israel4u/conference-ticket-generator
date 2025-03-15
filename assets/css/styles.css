@@ -30,21 +30,23 @@ body{
   background-position: center;
 }
 
-.wrapper{
-  position: relative;
-}
 
 .container{
   margin-inline: 0.9375rem;
 }
 
-.header {
+.header{
   text-align: center;
-  padding-top: 1.85rem;
+  margin-top: 1rem;
 }
+
 .hero{
   text-align: center;
   margin-top: 1rem;
+}
+
+.hero__title{
+  font-size: 1rem;
 }
 
 .top-pattern{
@@ -209,3 +211,106 @@ input:focus {
 
 }
 
+
+/* ticket page */
+.header-ticket{
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.hero-ticket{
+  text-align: center;
+}
+.hero-ticket__title{
+  font-size: 2rem;
+}
+.hero-ticket__name{
+  background: radial-gradient(circle, var(--white), var(--orange));
+  background-clip: text;
+  color: transparent;
+}
+.hero__description{
+  margin-bottom: 2rem;
+}
+.hero__email{
+  color: var(--lightOrange);
+}
+.ticket{
+  margin: 0 auto;
+  border-image: linear-gradient(to right, var(--white), var(--lightOrange)) 1;
+  border-radius: 5px; /* this doesn't work */
+  border-width: 1px;
+  border-style: solid;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  
+}
+
+.ticket{
+  max-width: 23.75rem;
+  /* backgroung-color: hsl(245, 19%, 35%, 0.8); */
+  display: flex;
+  gap: 0;
+}
+
+.ticket__personal-info{
+  flex: 2;
+  border-right: 1px dashed var(--lightBlue);
+  /* backgroung-color: hsl(245, 19%, 35%, 0.8); */
+}
+
+.ticket__location{
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.ticket__logo{
+  align-self: start;
+  margin-top: 5px;
+}
+.ticket__conference{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.current_date{
+  margin-top: 0;
+  color: var(--lightBlue);
+}
+
+.ticket__details{
+  display: flex;
+  align-items: start;
+  gap: 1rem;
+}
+
+.ticket__passport{
+  width: 2rem;
+  border-radius: 5px;
+}
+.ticket__name{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.ticket__social{
+  display: flex;
+  align-items: start;
+}
+.ticket__github-address{
+  margin-top: 0;
+  color: var(--lightBlue);
+}
+.ticket__id{
+  align-self: center;
+}
+.ticket__number{
+  color: var(--lightBlue);
+  rotate: 90deg;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+
+.attribution{
+  margin-top: 2rem;
+}

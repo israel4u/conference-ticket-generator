@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Conference ticket</title>
+    <!--- Google font --->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom styles --->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header-ticket">
+        <img
+          class="header-ticket__logo"
+          src="./assets/images/logo-full.svg"
+          alt="Coding conference logo"
+        />
+      </header>
+      <img
+        class="top-pattern"
+        src="./assets/images/pattern-squiggly-line-top.svg"
+        alt="Pattern squiggly top line"
+      />
+      <img
+        class="bottom-pattern"
+        src="./assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg"
+        alt="Pattern squiggly bottom line"
+      />
+      <main class="main container">
+        <div class="hero-ticket">
+          <h1 class="hero-ticket__title">
+            Congrats, <span class="hero-ticket__name">Shola Israel</span>! Your
+            ticket is ready.
+          </h1>
+          <p class="hero__description">
+            We've emailed your ticket to
+            <span class="hero__email">israeloluwasholao@gmail.com </span>and
+            will send updates in the run up to the event.
+          </p>
+        </div>
+
+        <div class="ticket">
+          <div class="ticket__personal-info">
+            <div class="ticket__location">
+              <img class="ticket__logo"
+                src="./assets/images/logo-mark.svg"
+                alt="Coding Conference Logo"
+              />
+              <div class="ticket__date">
+                <h2 class="ticket__conference">Coding Conf</h2>
+                <p class="current_date">Jan 31, 2025 / Austin, TX</p>
+              </div>
+            </div>
+            <div class="ticket__details">
+              <img class="ticket__passport" src="./assets/images/image-avatar.jpg" alt="Attendee's passport">
+              <div class="ticket__registrant">
+                <h3 class="ticket__name">Shola Israel</h3>
+                <div class="ticket__social">
+                  <img
+                    src="./assets/images/icon-github.svg"
+                    alt="Registrant Github Account"
+                  />
+                  <p class="ticket__github-address">@sholaisrael</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ticket__id">
+            <p class="ticket__number">#01609</p>
+          </div>
+        </div>
+      </main>
+      <footer></footer>
+    </div>
+
+    <!-- Form ends -->
+
+    <!-- Generated tickets starts -->
+    <!--
+    Congrats, 
+    {#  Full Name #}! Your ticket is ready. We've emailed your ticket to #}
+    Email Address 
+    and will send updates in the run up to the event. Coding Conf Jan 31, 2025 /
+    Austin, TX
+
+     Generated tickets ends -->
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Oluokun Oluwashola Israel</a>.
+    </div>
+  </body>
+</html>
